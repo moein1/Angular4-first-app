@@ -1,0 +1,22 @@
+ @media only screen and (max-width:768px) {
+     nav:hover {
+         ul {
+             li {
+                 @for $i from 1 through 5 {
+                     &:nth-child(#{$i}) {
+                         opacity: 0;
+                         transform-origin: top center;
+                         perspective: 1000px;
+                         animation: {
+                             name: menu;
+                             duration: 300ms;
+                             delay:150ms * $i;
+                             timing-function: ease-in-out;
+                             fill-mode: forwards;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }

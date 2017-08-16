@@ -1,0 +1,87 @@
+@media only screen and (max-width:768px) {
+    header {
+        #logo {
+            margin: 2%;
+            a {
+                color: $white-color;
+                font-size: 130%;
+            }
+        }
+        nav {
+            width: 15%;
+            #menu-icon {
+                display: inline-block;
+                margin: 5% 5% 0 0;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                text-align: center;
+                z-index: 100;
+                width: 100%;
+                top: 40px;
+                right: -2%;
+                overflow: hidden;
+                // opacity: .7;
+                // border-radius: 10px;
+                // box-shadow: 0 0 10px #555;
+                // border: 1px solid $white-color;
+                li {
+                    display: none;
+                    width: 96%;
+                    text-align: center;
+                    margin: 0 auto;
+                    background: darken($primary-color, 5%);
+                    border: 1px solid $white-color;
+                    border-radius: 8px;
+                    padding-bottom: 2%;
+                    a {
+                        font-size: 100%;
+                    }
+                    &:hover {
+                        background: darken($primary-color, 10%);
+                        a {
+                            color: darken($white-color, 10%);
+                        }
+                    }
+                }
+            }
+        }
+         nav:hover {
+            ul {
+                display: block;
+                li {
+                    display: block;                  
+                }
+            }
+        }
+      
+    }
+    .left-col,
+    .sidebar {
+        @include section(95%);
+    }
+    .sidebar {
+        ul {
+            li {
+                margin: 1% 1%;
+                padding: 2% 1%;
+                border-radius: 3px;
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .form-group {
+        input,
+        textarea {
+            font-size: 70%;
+        }
+    }
+    .btn {
+        font-size: 70%;
+    }   
+}
+

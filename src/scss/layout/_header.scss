@@ -1,0 +1,41 @@
+header {
+    background: $primary-color;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    #logo {
+        float: left;
+        margin: 2%;
+        a {
+            color: $white-color;
+            font-size: 200%;
+        }
+    }
+    nav {
+        float: right;
+        width: 20%;
+        margin-top: 2%;
+        #menu-icon {
+            display: none;
+        }
+        ul {
+            margin: 2%;
+            width: 100%;
+            li {
+                display: inline-block;
+                padding: 3% 3% 0 0;
+                .active{
+                    color: darken($white-color, 20%);
+                }
+                a {
+                    color: $white-color;
+                    font-size: 120%;
+                    font-weight: 700;
+                    &:hover {
+                        color: darken($white-color, 20%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@mixin section($width){
+    float: left;
+    width: $width;
+    margin: 1%;
+}
